@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="soluciones.js"></script>
+</head>
+<body>
+    <h2>Tarea : Javascript programación básica</h2>
+    <h3>Enunciado 1</h3>
+    
+    <p>1. diseña un web html5 con un formulario
+una caja tiene las unidades. 
+otra caja tiene el precio.cuando pulsas un botón, te muestra el total y el total con el iva incluido (21%)
+lo puedes mostrar en consola, en alert, en document.write...</p>
+<h4>Solución</h4>
+<form>
+    <label>Unidades</label>
+    <input type="number" id="unidades"><br>
+    <label>Precio</label>
+    <input type="number" id="precio"><br>
+</form>
+<button onclick="calcular()">Calcular</button>
+
+<p>2. diseña una web con html5 con un formulario
+caja donde metes un número inicial
+otra caja, metes un número final.al pulsar el botón te muestra los números que hay entre el inicio el final
+pero el número 20 nunca sale.</p>
+<h4>Solución</h4>
+<form>
+    <label>Inicial</label>
+    <input type="number" id="inicial"><br>
+    <label>Final</label>
+    <input type="number" id="final" onblur="comprobar()"><br>
+</form>
+<button onclick="verNumeros()"disabled id="btn1">Ver listado de números</button>
+
+<p>3.en una web pides tu nombre y tu ciudad.
+Si pones ciudad Madrid, te dice que la fecha de inicio es 01-12-2020
+pero si es otra ciudad, la fecha de inicio es 15-12-2020.</p>
+
+<form>
+    <input type="text" placeholder="Dime una nombre" id="nombre"><br>
+    <input type="text" placeholder="Dime una ciudad" id="ciudad"><br>
+</form>
+<button onclick="verFecha()">Calcular fecha de inicio</button>
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Programación con JavaScript</h2>
+    <img src="foto.png" width="200" id="caja">
+    <button onclick="cambiar()">Nueva foto</button>
+    <script type="text/javascript">
+    var j=1;//variable global
+
+    //js es debilmente tipado
+    //un iguales asignar un valor
+    function cambiar()
+    {
+        //variable local
+        console.log("cambiando")
+        document.getElementById("caja").src="foto"+j+".png";
+        j+=1;
+        if(j==4)//comparación
+        {
+            j=1;
+        }
+    }
+       // window.alert("un mensaje");
+        var nombre="juan"; //tipo String
+        var unidades=15; //tipo number
+     //window.alert("hola"+ nombre);
+     document.write("<h3>hola "+nombre+"</h3>");
+     console.log("estamos probando");
+     if(unidades<10)
+     {
+         console.log("pocas unidades");
+     }
+    else{
+        console.log("muchas unidades");
+    }
+     //bucles
+     for(i=0;i<20;i+=2)
+    {
+        document.write("<p>"+i+"</p>");
+    }
+
+    </script>
+    
+</body>
+</html>
